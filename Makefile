@@ -453,6 +453,17 @@ validate: ## Validar instalação completa
 	@[ -f "sophos-firewall-audit/sophos_firewall_audit.py" ] || echo "$(YELLOW)⚠️  Sophos Audit não encontrado$(NC)"
 	@echo "$(GREEN)✅ Validação concluída$(NC)"
 
+diagnose: ## Executar diagnóstico completo do sistema
+	@echo "$(GREEN)Executando diagnóstico completo...$(NC)"
+	@$(PYTHON) debug.py
+
+fix: ## Corrigir problemas comuns automaticamente
+	@echo "$(GREEN)Corrigindo problemas automaticamente...$(NC)"
+	@$(PYTHON) debug.py
+	@echo "$(BLUE)Execute 'make diagnose' para verificar se os problemas foram corrigidos$(NC)"
+
+doctor: diagnose ## Alias para diagnose
+
 # ==============================================
 # VARIÁVEIS DE AMBIENTE PARA DESENVOLVIMENTO
 # ==============================================
