@@ -1,4 +1,4 @@
-# Strati Audit System 🛡️
+# Strati Guardian Audit System 🛡️
 
 Sistema de auditoria de segurança para firewalls Sophos, desenvolvido para automatizar e centralizar auditorias de segurança em infraestruturas empresariais.
 
