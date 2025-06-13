@@ -227,9 +227,6 @@ Usuário: admin
 Senha: admin123
 Role: admin
 
-Usuário: william
-Senha: william123
-Role: admin
 ```
 
 **⚠️ IMPORTANTE**: Altere as senhas padrão imediatamente após a instalação!
